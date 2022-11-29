@@ -11,7 +11,7 @@ body {
 
 .background {
     height: 100vh;
-    background-image: url("img/rain.gif");
+    background-image: url("../img/rain.gif");
 }
 
 header {
@@ -93,6 +93,15 @@ footer p {
     padding: 0 1rem;
 }
 
+footer p a {
+    text-decoration: none;
+    color: #2F9AE0;
+}
+
+footer p a:hover {
+    color: #FFFFBC;
+}
+
 .sociallinks {
     background-color: #9CDBE2;
     border: 5px solid #232B58;
@@ -102,6 +111,14 @@ footer p {
 
 .sociallinks img {
     padding: 0.5rem 1rem;
+}
+
+.sociallinks svg {
+    margin: 0.5rem 1rem;
+}
+
+.sociallinks svg:hover {
+    fill: #E8C078;
 }
 
 .sociallinks a {
