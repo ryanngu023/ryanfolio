@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# ignore OS generated files
+.DS_Store
+Thumbs.db
