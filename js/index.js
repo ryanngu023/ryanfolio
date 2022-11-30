@@ -6,9 +6,11 @@ const header = document.querySelector("header");
 
 let navOpen = false;
 
+let currentPage = "home";
+
 function createNavBar() {
     const newNavElem = document.createElement("nav");
-    newNavElem.innerHTML = "<a href=\"about.html\">About Me</a><a href=\"about.html\">Home</a><a href=\"about.html\">Projects</a>";
+    newNavElem.innerHTML = "<a href=\"about.html\">About Me</a><a href=\"index.html\">Home</a><a href=\"about.html\">Projects</a>";
     return newNavElem;
 }
 hamburgerButton.addEventListener('click', function(event) {
@@ -22,3 +24,4 @@ hamburgerButton.addEventListener('click', function(event) {
         navOpen = false;
     }
 });
+
