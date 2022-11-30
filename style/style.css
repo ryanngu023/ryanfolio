@@ -55,7 +55,7 @@ header button img {
     border: 5px solid #232B58;
 }
 
-main h1 {
+.name {
     color: #9CDBE2;
 }
 
@@ -90,13 +90,34 @@ main h1 {
     font-size: 14px;
 }
 
+.aboutbox {
+    max-width: 80%;
+    background-color: #9CDBE2;
+    border: 5px solid #232B58;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 14px;
+}
+
 .biospacing {
     width: 90%;
     margin: auto;
 }
 
-.left-bio {
+.left-bio:first-child {
     text-align: center;
+}
+
+.left-bio p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.left-bio ul {
+    text-align: left;
+    font-size: 14px;
 }
 
 .textbox p {
@@ -112,9 +133,14 @@ footer {
     padding: 1rem;
 }
 footer p {
+    display: none;
     color: #9CDBE2;
     margin: auto 0;
     padding: 0 1rem;
+}
+
+.biofooter {
+    position: relative;
 }
 
 footer p a {
@@ -169,11 +195,20 @@ footer p a:hover {
 }
 
 @media (min-width: 992px) {
-    .textbox {
+    .textbox, .aboutbox {
         max-width: 90%;
     }
 
     .banner {
+        display: block;
+    }
+
+    .biofooter {
+        position: fixed;
+        bottom: 0;
+    }
+
+    footer p {
         display: block;
     }
 
