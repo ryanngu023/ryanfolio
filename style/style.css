@@ -36,6 +36,10 @@ nav a {
     color: black;
 }
 
+nav a:hover {
+    animation: bounce 0.4s;
+}
+
 header button {
     background-color: transparent;
     outline: none;
@@ -47,6 +51,13 @@ header button img {
     max-height: 48px;
 }
 
+header button:hover {
+    transform: scale(1.2);
+}
+
+header button:active {
+    transform: scale(1);
+}
 
 .profile {
     max-width: 200px;
@@ -175,6 +186,19 @@ footer p a:hover {
     text-decoration: none;
 }
 
+@keyframes bounce {
+   40%, 80%, 100% {
+    transform: translateY(0);
+    } 
+   20% {
+    transform: translateY(-5px);
+    } 
+   60% {
+    transform: translateY(5px);
+    } 
+}
+
+
 @media (min-width: 768px) {
     footer {
         display: flex;
@@ -199,17 +223,13 @@ footer p a:hover {
         max-width: 90%;
     }
 
-    .banner {
+    .banner, footer p {
         display: block;
     }
 
     .biofooter {
         position: fixed;
         bottom: 0;
-    }
-
-    footer p {
-        display: block;
     }
 
     .content {
