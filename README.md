@@ -16,7 +16,7 @@ Action steps to improve website for the future (List is tentative):
 
 ## Image and GIF sources
 
-Icons from (https://icons8.com/)[Icons8]
+Icons from [Icons8](https://icons8.com/)
 
 Raining GIF on Home Page: https://giphy.com/stickers/rain-shower-pouring-eH2lexWtxzL4TGQ0J6
 
