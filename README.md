@@ -10,6 +10,9 @@ Initially designed and wireframed Personal Portfolio using Figma, then implement
 ## Future Goals and Plans
 
 Action steps to improve website for the future (List is tentative):
+- Implement Carousel for projects page
+- Fix and optimize for mobile
+- Fix footer on shorter screens
 - Transfer to React.js
 - Transfer project details to data
 
