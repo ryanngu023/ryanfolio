@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ryanngu023.github.io/ryanfolio/static/css/main.b84acf95.css",
+    "main.js": "/ryanngu023.github.io/ryanfolio/static/js/main.c514c251.js",
+    "static/media/brightideacut.jpg": "/ryanngu023.github.io/ryanfolio/static/media/brightideacut.87bb8fa5c253c9dc0a53.jpg",
+    "static/media/aboutback.png": "/ryanngu023.github.io/ryanfolio/static/media/aboutback.9641c72b689fb74cbdcb.png",
+    "index.html": "/ryanngu023.github.io/ryanfolio/index.html",
+    "main.b84acf95.css.map": "/ryanngu023.github.io/ryanfolio/static/css/main.b84acf95.css.map",
+    "main.c514c251.js.map": "/ryanngu023.github.io/ryanfolio/static/js/main.c514c251.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b84acf95.css",
+    "static/js/main.c514c251.js"
+  ]
+}
