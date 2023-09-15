@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Roboto', 'Ubuntu',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+nav ul li:hover {
+  color: #3A4856;
+  border-bottom: 1px solid #3A4856;
+  cursor: pointer;
+}
+
+.profile {
+  border-radius: 15px;
+  border: 3px solid #FAF7F7;
+  box-shadow: 8px 8px rgba(58, 75, 86, 0.25);
+}
+
+.viewresume:hover {
+  border-radius: 13px;
+  background-color:rgba(58, 75, 86, 0.5);
+}
+
+.projects {
+  background-color:#FAF7F7;
+}
