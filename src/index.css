@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   box-sizing: border-box;
+  background-color: #FAF7F7;
   font-family: 'Segoe UI', 'Roboto', 'Ubuntu',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -32,9 +33,24 @@ body {
   background: #555;
 }
 
-nav ul li:hover {
+.topscroll ul, .topscroll {
+  background-color: transparent;
+  color: #FAF7F7;
+}
+
+.midscroll ul, .midscroll {
+  
+}
+
+.topscroll ul li:hover {
   color: #3A4856;
   border-bottom: 1px solid #3A4856;
+  cursor: pointer;
+}
+
+.midscroll ul li:hover {
+  color: #FAF7F7;
+  border-bottom: 1px solid #FAF7F7;
   cursor: pointer;
 }
 
@@ -52,3 +68,44 @@ nav ul li:hover {
 .projects {
   background-color:#FAF7F7;
 }
+
+.card-container {
+  perspective: 900px;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: transform 500ms;
+  transform-style: preserve-3d;
+}
+
+.projecttag {
+  background-color: #FAF7F7;
+  border-radius: 15px;
+  padding: 1rem;
+  height: 4rem;
+  width: 8rem;
+  margin: 0 1rem;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-content, .hover-content {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.hover-content {
+  transform: rotateY(180deg);
+  position: relative;
+}
+
+.card-container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
