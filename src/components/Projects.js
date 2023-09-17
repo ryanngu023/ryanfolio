@@ -99,11 +99,8 @@ export default function Projects(props) {
                             </div>
                         </div>
 
-
-
                     </div>
                     
-
                 </div>
                 
                 </motion.div>

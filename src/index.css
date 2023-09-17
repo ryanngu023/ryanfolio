@@ -109,3 +109,20 @@ body {
   transform: rotateY(180deg);
 }
 
+.contactform {
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+form button {
+  margin-top: 2rem;
+  width: 10%;
+  margin: 2rem auto;
+  padding: 0.25rem;
+  background-color: #FAF7F7;
+  border: 1px solid black;
+}
+
+form input {
+  border: 1px solid black;
+  background-color: #FAF7F7;
+}
