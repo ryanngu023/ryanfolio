@@ -26,7 +26,7 @@ export default function Navbar(props) {
             <ul>
                 <li data-target='#about' onClick={onClick} className="inline">Home</li>
                 <li data-target='#projects' onClick={onClick} className="inline ml-6">Projects</li>
-                <li className="inline ml-6">Contact</li>
+                <li data-target='#contact' onClick={onClick} className="inline ml-6">Contact</li>
             </ul>
         </nav>
     )

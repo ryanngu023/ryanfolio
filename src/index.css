@@ -10,7 +10,7 @@ body {
   overflow-y: scroll;
   box-sizing: border-box;
   background-color: #FAF7F7;
-  font-family: 'Segoe UI', 'Roboto', 'Ubuntu',sans-serif;
+  font-family: 'Nunito Sans', 'Roboto', 'Ubuntu',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -38,19 +38,15 @@ body {
   color: #FAF7F7;
 }
 
-.midscroll ul, .midscroll {
-  
+.midscroll {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #FAF7F7;
 }
 
-.topscroll ul li:hover {
+
+nav ul li:hover {
   color: #3A4856;
   border-bottom: 1px solid #3A4856;
-  cursor: pointer;
-}
-
-.midscroll ul li:hover {
-  color: #FAF7F7;
-  border-bottom: 1px solid #FAF7F7;
   cursor: pointer;
 }
 
@@ -70,7 +66,7 @@ body {
 }
 
 .card-container {
-  perspective: 900px;
+  perspective: 700px;
 }
 
 .card {
@@ -110,7 +106,9 @@ body {
 }
 
 .contactform {
+  border: 1px solid rgba(0, 0, 0, 0.25);
   box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
 }
 
 form button {
@@ -118,11 +116,32 @@ form button {
   width: 10%;
   margin: 2rem auto;
   padding: 0.25rem;
-  background-color: #FAF7F7;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+form button:hover {
+  background-color: #9DADBC;
+}
+
+form label {
+  padding-bottom: 0.5rem;
+  font-size: 16px;
 }
 
 form input {
-  border: 1px solid black;
-  background-color: #FAF7F7;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  height: 35px;
+  padding: 0.5rem;
+}
+
+form textarea {
+  resize: vertical;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  min-height: 100px;
+  max-height: 200px;
+}
+
+#contact {
+  background: linear-gradient(180deg, #6AC1FF, #3FA0E5 50% 80%, #0094FE);
 }

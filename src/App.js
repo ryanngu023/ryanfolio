@@ -9,12 +9,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <main>
-        <About />
-        <Projects />
-        <Contact />
-      </main>
-      {/* <Footer /> */}
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }
