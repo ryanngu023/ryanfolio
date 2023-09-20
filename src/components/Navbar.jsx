@@ -21,9 +21,9 @@ export default function Navbar(props) {
     }
 
     return (
-        <nav className={`${colorChange ? 'midscroll' : 'topscroll'} flex justify-between px-11 py-3 fixed w-screen z-50`}>
-            <p className="font-bold">Ryanfolio</p>
-            <ul>
+        <nav className={`${colorChange ? 'midscroll' : 'topscroll'} flex text-faf-white justify-between px-11 py-3 fixed w-screen z-50`}>
+            <p className="font-bold hidden md:block">Ryanfolio</p>
+            <ul className='w-full text-center md:text-right'>
                 <li data-target='#about' onClick={onClick} className="inline">Home</li>
                 <li data-target='#projects' onClick={onClick} className="inline ml-6">Projects</li>
                 <li data-target='#contact' onClick={onClick} className="inline ml-6">Contact</li>

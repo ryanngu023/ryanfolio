@@ -5,9 +5,9 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function Footer(props) {
     return (
-        <footer className="flex justify-between relative pt-10 pb-5 bg-[#3F608F]">
-            <p className="ml-5 text-white text-xl">Copyright &copy; 2023. All rights are reserved</p>
-            <div className="mr-7">
+        <footer className="flex flex-col md:flex-row justify-between relative pt-10 pb-5 bg-[#3F608F]">
+            <p className="ml-5 text-white text-xl text-center">Copyright &copy; 2023. All rights are reserved</p>
+            <div className="mx-auto my-5 md:my-0 md:mr-7">
                 <a href='https://github.com/ryanngu023' target='_blank' rel='noreferrer'>
                     <GitHubIcon className='mr-3' sx={{ '&:hover':{ color: '#3A4856'}, color: '#FAF7F7', fontSize: 40}} />
                 </a>
@@ -18,7 +18,6 @@ export default function Footer(props) {
                 <a href='mailto:ryannguyen10023@gmail.com'>
                     <EmailIcon className='ml-3' sx={{ '&:hover':{ color: '#3A4856'}, color: '#FAF7F7', fontSize: 40}} />
                 </a>
-
             </div>
         </footer>
     )

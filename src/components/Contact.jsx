@@ -1,13 +1,30 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Contact(props) {
+    const contactVariants = {
+        offscreen: {
+            opacity: 0,
+            translateY: -300,
+        },
+        onscreen: {
+            opacity: 1,
+            translateY: 0,
+            transition: {
+                type: 'spring',
+                ease: 'easeIn',
+                duration: 1
+            }
+        }
+    }
     return (
         <section id='contact' className="pt-24 pb-32">
-            <div className='text-center mx-auto w-1/2 text-[#FAF7F7]'>
-                <p className="text-5xl">Contact Me!</p>
-                <p className='text-xl pt-5'>Whether you have a project that you would like to work on together, an inspiring opportunity, or just want to talk, feel free to contact me!</p>
+            <motion.div variants={contactVariants} initial='offscreen' whileInView='onscreen' viewport={{once: true, amount: 0.8}}>
+            <div className='text-center mx-auto w-5/6 md:w-1/2 text-faf-white'>
+                <p className="text-3xl md:text-5xl">Contact Me!</p>
+                <p className='text-base md:text-xl pt-5'>Whether you have a project that you would like to work on together, an inspiring opportunity, or just want to talk, feel free to contact me!</p>
             </div>
-            <div className="contactform mt-10 w-1/2 mx-auto text-center bg-[#FAF7F7]">
+            <div className="contactform mt-10 w-5/6 lg:w-1/2 mx-auto text-center bg-faf-white">
                 <form className='flex flex-col p-10'>
                     <p className="text-left pb-3"><span className="text-red-600">*</span> are required</p>
                     <div className='flex justify-between'>
@@ -24,9 +41,10 @@ export default function Contact(props) {
                     <input type='text'></input>
                     <label className='pt-10'>Content<span className="text-red-600">*</span>:</label>
                     <textarea className='p-2' placeholder="Enter your message..."></textarea>
-                    <button className='bg-[#FAF7F7] rounded' type='submit'>Send</button>
+                    <button className='bg-faf-white rounded' type='submit'>Send</button>
                 </form>
             </div>
+            </motion.div>
         </section>
     )
 }

@@ -6,10 +6,10 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
   overflow-x: hidden;
   overflow-y: scroll;
   box-sizing: border-box;
-  background-color: #FAF7F7;
   font-family: 'Nunito Sans', 'Roboto', 'Ubuntu',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,18 +35,22 @@ body {
 
 .topscroll ul, .topscroll {
   background-color: transparent;
-  color: #FAF7F7;
 }
 
 .midscroll {
-  background-color: rgba(0, 0, 0, 0.25);
-  color: #FAF7F7;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 
 nav ul li:hover {
   color: #3A4856;
   border-bottom: 1px solid #3A4856;
+  cursor: pointer;
+}
+
+.midscroll ul li:hover {
+  color: #0094FE;
+  border-bottom: 1px solid #0094FE;
   cursor: pointer;
 }
 
@@ -59,10 +63,6 @@ nav ul li:hover {
 .viewresume:hover {
   border-radius: 13px;
   background-color:rgba(58, 75, 86, 0.5);
-}
-
-.projects {
-  background-color:#FAF7F7;
 }
 
 .card-container {
@@ -113,7 +113,7 @@ nav ul li:hover {
 
 form button {
   margin-top: 2rem;
-  width: 10%;
+  width: 100px;
   margin: 2rem auto;
   padding: 0.25rem;
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -145,3 +145,14 @@ form textarea {
 #contact {
   background: linear-gradient(180deg, #6AC1FF, #3FA0E5 50% 80%, #0094FE);
 }
+
+.link {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.link:hover {
+  background-color:rgba(0, 0, 0, 0.5);
+  color: #FAF7F7;
+}
+
