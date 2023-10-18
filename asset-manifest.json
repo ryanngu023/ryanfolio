@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ryanfolio/static/css/main.e6abde2c.css",
-    "main.js": "/ryanfolio/static/js/main.6a03a6dd.js",
+    "main.css": "/ryanfolio/static/css/main.550dfac6.css",
+    "main.js": "/ryanfolio/static/js/main.376d72a5.js",
     "static/media/brightideacut.jpg": "/ryanfolio/static/media/brightideacut.87bb8fa5c253c9dc0a53.jpg",
     "static/media/aboutback.png": "/ryanfolio/static/media/aboutback.9641c72b689fb74cbdcb.png",
     "static/media/logo2.png": "/ryanfolio/static/media/logo2.9948681807154a48abe9.png",
     "static/media/SWECClogo.png": "/ryanfolio/static/media/SWECClogo.24348a1b6dffec3cf2a1.png",
     "static/media/logo.png": "/ryanfolio/static/media/logo.e10434ead902dc6598fa.png",
     "index.html": "/ryanfolio/index.html",
-    "main.e6abde2c.css.map": "/ryanfolio/static/css/main.e6abde2c.css.map",
-    "main.6a03a6dd.js.map": "/ryanfolio/static/js/main.6a03a6dd.js.map"
+    "main.550dfac6.css.map": "/ryanfolio/static/css/main.550dfac6.css.map",
+    "main.376d72a5.js.map": "/ryanfolio/static/js/main.376d72a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6abde2c.css",
-    "static/js/main.6a03a6dd.js"
+    "static/css/main.550dfac6.css",
+    "static/js/main.376d72a5.js"
   ]
 }
