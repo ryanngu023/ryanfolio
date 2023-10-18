@@ -10,6 +10,7 @@ export default function Contact(props) {
         email: '',
         message: ''
     })
+    const [error, setError] = useState(false);
 
     const FORM_ENDPOINT = process.env.REACT_APP_GETFORMS_ENDPOINT;
 
@@ -25,7 +26,13 @@ export default function Contact(props) {
     function handleSubmit(event) {
         event.preventDefault();
         if(loading) return;
-        setLoading(true);
+        setLoading(true);    
+        if(query.email === '' || query.message === '') {
+            setError(true);
+            setLoading(false);
+            return;
+        }
+        setError(false);
         const formData = new FormData();
         Object.entries(query).forEach(([key, value]) => {
             formData.append(key, value);
@@ -78,6 +85,7 @@ export default function Contact(props) {
             <div className="contactform mt-10 w-5/6 lg:w-1/2 mx-auto text-center bg-faf-white">
                 <form className='flex flex-col p-10' encType="multipart/form-data" onSubmit={handleSubmit}>
                     <p className="text-left pb-3"><span className="text-red-600">*</span> are required</p>
+                    {error && <p className='text-red-500'>Please fill out missing required fields</p>}
                     <div className='flex justify-between'>
                         <div className='flex flex-col w-[45%]'>
                             <label>First Name:</label>

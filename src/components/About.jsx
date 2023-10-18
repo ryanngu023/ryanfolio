@@ -45,7 +45,7 @@ export default function About(props) {
                         <EmailIcon className='ml-3' sx={{ '&:hover':{ color: '#3A4856'}, fontSize: 40}} />
                         </a>
                     </div>
-                        <a href='https://drive.google.com/file/d/1z5JzG-gR1J3301zM_n1LUuaAUEF4jQzs/view?usp=sharing' rel='noreferrer' target='_blank'>
+                        <a href='https://drive.google.com/file/d/16apHjowZ4iK1D3n2KtJ2JCu4oNjrzbjw/view?usp=sharing' rel='noreferrer' target='_blank'>
                             <img className='mx-auto mt-3 md:mt-0 viewresume w-36 h-10' alt='' src={viewresume} />
                         </a>
                     </div>
